@@ -25,6 +25,7 @@ body {
 
 .image-2 {
   background-image: url('image2.jpg');
+
 }
 
 /* Clickable hotspots - invisible until hover */
@@ -107,3 +108,109 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+
+/* ── TABLET (max 1024px) ─────────────────────────── */
+@media (max-width: 1024px) {
+  .hotspot {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .discovery-hint {
+    max-width: 260px;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .discovery-hint p {
+    font-size: 1rem;
+  }
+}
+
+/* ── MOBILE (max 768px) ──────────────────────────── */
+@media (max-width: 768px) {
+
+  .image-1 {
+  background-position: 35% center !important;
+}
+ .image-2 {
+  background-position: 25% center !important;
+}
+
+  body {
+    overflow: hidden;
+  }
+
+  /* Make hotspots bigger and easier to tap */
+  .hotspot {
+    width: 180px !important;
+    height: 180px !important;
+    /* Always show a subtle glow on mobile so users know where to tap */
+    background: rgba(168,184,122,0.12) !important;
+    box-shadow: 0 0 40px rgba(168,184,122,0.3),
+                inset 0 0 30px rgba(168,184,122,0.15);
+  }
+
+  .hotspot:active {
+    background: rgba(168,184,122,0.5) !important;
+    box-shadow: 0 0 60px rgba(168,184,122,0.8),
+                inset 0 0 40px rgba(168,184,122,0.4);
+  }
+
+  .title {
+    top: 1.2rem;
+    left: 1.5rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.25em;
+  }
+
+  .discovery-hint {
+    top: auto;
+    bottom: 2rem;
+    right: 1rem;
+    left: 1rem;
+    max-width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .discovery-hint p {
+    font-size: 1rem;
+  }
+}
+
+/* ── SMALL MOBILE (max 480px) ────────────────────── */
+@media (max-width: 480px) {
+
+  .hotspot {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .title {
+    font-size: 0.5rem;
+    left: 1rem;
+  }
+
+  .discovery-hint p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -341,3 +341,185 @@ rgba(14,26,14,0.1) 100%
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* ── TABLET (max 1024px) ─────────────────────────── */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-left {
+    padding: 9rem 1.5rem 4rem 2rem;
+  }
+
+  .ghost-a {
+    font-size: 20rem;
+  }
+
+  .hero-quote {
+    margin-top: 5rem;
+  }
+
+  .quote-line {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    padding: 2rem 2rem;
+  }
+}
+
+/* ── MOBILE (max 768px) ──────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Hide custom cursor on touch devices */
+  .cursor, .cursor-ring, .glow { display: none; }
+  html, body { cursor: auto; }
+
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Stack hero vertically */
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  nav {
+    padding: 1.5rem 1.5rem;
+    position: relative;
+  }
+
+  .nav-logo {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+  }
+
+  /* Left column full width */
+  .hero-left {
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    order: 1;
+  }
+
+  .ghost-a {
+    font-size: 12rem;
+    top: 40%;
+    left: 0;
+  }
+
+  .letter-title {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  .scroll-cue {
+    font-size: 1rem;
+    margin-top: 0.6rem;
+  }
+
+  .hero-quote {
+    margin-top: 3rem;
+    max-width: 100%;
+  }
+
+  .quote-line {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .attr-row span {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* Right column — image below text */
+  .hero-right {
+    order: 2;
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+
+  .image-frame {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-box {
+    height: 60vw;
+    min-height: 280px;
+  }
+
+  /* Always show image on mobile (no scroll reveal) */
+  .image-clip {
+    clip-path: inset(0 0 0% 0) !important;
+  }
+
+  /* Always show quote lines on mobile */
+  .quote-line {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  .letter-title {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  #imgCap {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  .scroll-dot {
+    display: none;
+  }
+
+  .tip { display: none; }
+}
+
+/* ── SMALL MOBILE (max 480px) ────────────────────── */
+@media (max-width: 480px) {
+
+  nav {
+    padding: 1.2rem 1rem;
+  }
+
+  .nav-logo {
+    font-size: 0.55rem;
+    letter-spacing: 0.15em;
+  }
+
+  .hero-left {
+    padding: 1.5rem 1rem 2rem 1rem;
+  }
+
+  .ghost-a {
+    font-size: 8rem;
+  }
+
+  .letter-title {
+    font-size: 2rem;
+  }
+
+  .quote-line {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .attr-row span {
+    font-size: 0.5rem;
+  }
+
+  .hero-right {
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .image-box {
+    height: 70vw;
+  }
+}
