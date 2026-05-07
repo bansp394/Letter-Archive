@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="title"></div>
+  <a href="#about" class="about-link">About</a>
+
+  <!-- Image 1: Tree canopy with O and Y -->
+  <div class="image-layer image-1 active" id="image1">
+    <!-- O hotspot - center radial pattern -->
+   <a href="LetterO/index.html">
+      <div class="hotspot" data-letter="O" style="
+        width: 350px; height: 350px;
+        top: 65%; left: 45%;
+        transform: translate(-50%, -50%);
+      "></div>
+    </a>
+
+    <!-- Y hotspot - left side Y-shaped branch -->
+    <a href="LetterY/index.html">
+      <div class="hotspot" data-letter="Y" style="
+        width: 350px; height: 350px;
+        top: 20%; left: 35%;
+        transform: translate(-50%, -50%);
+      "></div>
+    </a>
+
+  
+  </div>
+
+  <!-- Image 2: Crossed branches with A and X -->
+  <div class="image-layer image-2" id="image2">
+    <!-- A hotspot - left side A-shaped formation -->
+    <a href="LetterA/index.html">
+      <div class="hotspot" data-letter="A" style="
+         width: 350px; height: 350px;
+        top: 48%; left: 33%;
+        transform: translate(-50%, -50%);
+      "></div>
+    </a>
+
+    <!-- X hotspot - center X-shaped crossed branches -->
+    <a href="LetterX/index.html">
+      <div class="hotspot" data-letter="X" style="
+        width: 350px; height: 350px;
+        top: 62%; left: 65%;
+        transform: translate(-50%, -50%);
+      "></div>
+    </a>
+  </div>
+
+  
+
+  <!-- Discovery hint - appears after 10 seconds -->
+  <div class="discovery-hint" id="discoveryHint">
+    <p>Look closer! Click where the branches feel densest.</p>
+  </div>
+
+  <div class="about-overlay" id="about">
+  <a href="#" class="about-close">✕</a>
+  <div class="about-inner">
+    <div class="about-image-wrap">
+      <div class="about-image-frame">
+        <img src="Jorge_Luis_Borges.jpg" alt="Jorge Luis Borges">
+        <span class="b b-tl"></span>
+        <span class="b b-tr"></span>
+        <span class="b b-bl"></span>
+        <span class="b b-br"></span>
+      </div>
+      <p class="about-image-caption">Jorge Luis Borges · Buenos Aires</p>
+    </div>
+    <div class="about-text">
+      <span class="about-label">About the Author</span>
+      <h1 class="about-heading">Jorge Luis<br>Borges</h1>
+      <div class="about-divider"></div>
+      <p class="about-body">
+        Jorge Luis Borges (1899–1986) was an Argentine writer and poet best known 
+        for his imaginative short stories that blend philosophy, fantasy, and literature. 
+        Though he never wrote a novel, his collections <em>Ficciones</em> and 
+        <em>The Aleph</em> made him one of the most influential authors of the 20th century.
+      </p>
+      <p class="about-body">
+        Borges explored ideas such as <em>infinity</em>, time, identity, and reality 
+        through symbols like labyrinths and mirrors. He slowly went blind, yet continued 
+        writing by dictating his work — even while serving as director of 
+        Argentina's National Library.
+      </p>
+      <div class="about-attr">1899 – 1986 · Buenos Aires, Argentina</div>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
